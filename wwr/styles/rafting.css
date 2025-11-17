@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0d355f;
+    --secondary-color: #ffffff;
+    --overlay-color: rgba(0, 32, 91, 0.7);
+    --text-light: #f1f1f1;
+    --heading-font: "Arial Black", sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 840px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 120px;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+header nav ul {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.hero {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    background: var(--overlay-color);
+    padding: 10px 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 90%;
+    background: var(--overlay-color);
+    color: var(--text-light);
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.hero article img {
+    width: 120px;
+    height: auto;
+}
+
+main section {
+    width: 840px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main section h2 {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 0;
+    font-family: var(--heading-font);
+    margin-bottom: 15px;
+}
+
+main section p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+footer {
+    width: 840px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.socialmedia a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 45px;
+}
