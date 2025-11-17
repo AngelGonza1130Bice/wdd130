@@ -17,13 +17,14 @@ body {
     font-family: var(--body-font);
     color: #333;
     background-color: #fff;
+    line-height: 1.5;
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 20px;
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -33,7 +34,7 @@ header img {
 
 header h1 {
     margin-left: 20px;
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--primary-color);
     font-family: var(--heading-font);
 }
@@ -48,14 +49,19 @@ header nav ul {
 header nav a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 .hero {
     position: relative;
-    margin: 0 auto;
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hero img {
@@ -68,7 +74,7 @@ header nav a {
     top: 40px;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.3rem;
     color: var(--secondary-color);
     font-family: var(--heading-font);
     background: var(--overlay-color);
@@ -79,7 +85,7 @@ header nav a {
     position: absolute;
     bottom: 40px;
     left: 20px;
-    width: 90%;
+    width: calc(100% - 40px);
     background: var(--overlay-color);
     color: var(--text-light);
     padding: 15px;
@@ -90,10 +96,11 @@ header nav a {
 .hero article img {
     width: 120px;
     height: auto;
+    border-radius: 5px;
 }
 
 main section {
-    width: 840px;
+    max-width: 840px;
     margin: 20px auto;
     text-align: center;
 }
@@ -112,22 +119,9 @@ main section p {
 }
 
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 40px auto;
     text-align: center;
     padding: 20px 0;
     border-top: 2px solid #ccc;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-.socialmedia a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 45px;
 }
